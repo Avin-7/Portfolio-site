@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Londrina+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                fill="gray"
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#home" onclick="hideSidebar()">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about" onclick="hideSidebar()">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#skills" onclick="hideSidebar()">Skills</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact" onclick="hideSidebar()"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li onclick="showSidebar()" class="menu-button">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                fill="gray"
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container hero" id="home">
+      <h1 class="">Hello</h1>
+      <h1>I&apos;m, <span class="my-name">Avin Dcosta</span></h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+        totam assumenda esse incidunt veritatis harum minus nesciunt atque
+        eligendi porro.
+      </p>
+      <button class="hire-me-btn">Hire me</button>
+      <button class="download-my-cv">Download CV</button>
+    </div>
+    <h1 class="aboutme-h1">About</h1>
+    <div class="about" id="about">
+      <div class="left-about">
+        <h1>Avin Joy Dcosta</h1>
+        <p class="about-me-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          facilis optio quia aperiam tempore omnis incidunt voluptatum quod
+          consequuntur error iste, unde illo soluta in maiores enim, distinctio
+          accusantium voluptatibus.
+        </p>
+      </div>
+      <div class="right-about">
+        <img src="profile-pic (3).png" alt="" width="300px" height="300px" />
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-section">
+        <div class="skill">
+          <!-- <span>html</span> -->
+          <img
+            src="html5-svgrepo-com (2).svg"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+        </div>
+        <div class="skill">
+          <!-- <span>css</span> -->
+          <img src="css-svgrepo-com.svg" alt="" width="80px" height="80px" />
+        </div>
+        <div class="skill">
+          <!-- <span>Javascript</span> -->
+          <img
+            src="javascript-svgrepo-com (1).svg"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+        </div>
+      </div>
+      <div class="skills-section">
+        <div class="skill">
+          <!-- <span>React js</span> -->
+          <img
+            src="react-svgrepo-com (1).svg"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+        </div>
+        <!-- <div class="skill">
+          <span>Data Structure & Algorithm</span>
+          <img src="code-svgrepo-com.svg" alt="" width="80px" height="80px" />
+        </div> -->
+
+        <div class="skill">
+          <img
+            src="git-svgrepo-com (1).svg"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h2 class="contact-h2">Contact</h2>
+      <div class="contact-div">
+        <ul>
+          <li>
+            <a
+              ><ion-icon name="mail" size="small"></ion-icon>
+              avinjoy51@gmail.com</a
+            >
+          </li>
+          <li>
+            <a><ion-icon name="call" size="small"></ion-icon> +91 9632188743</a>
+          </li>
+          <li>
+            <a
+              ><ion-icon name="logo-linkedin" size="small"></ion-icon>
+              avinjoydcosta
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
